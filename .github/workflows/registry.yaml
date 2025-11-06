@@ -56,6 +56,10 @@ jobs:
           repository: RayaneBarrosM/hello-manifests
           ref: main
           ssh-key: ${{env.SSH_PRIVATE_KEY}}
+      
+      - name: List files in repository  # ← ADICIONE ESTE STEP
+        run: ls -la
+
       - name: Update image tag in kustomization
         run: |
           sed -i 's|newTag:.*|newTag: ${{ env.TAG }}|' kustomization.yaml
