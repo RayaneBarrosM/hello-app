@@ -53,9 +53,9 @@ jobs:
       - name: Checkout manifests repo
         uses: actions/checkout@v4
         with:
-          repository: rayane001/hello-manifests
+          repository: RayaneBarrosM/hello-manifests
           ref: main
-          
+          ssh-key: ${{env.SSH_PRIVATE_KEY}}
       - name: Update image tag in kustomization
         run: |
           sed -i 's|newTag:.*|newTag: ${{ env.TAG }}|' kustomization.yaml
