@@ -329,7 +329,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/github_manifests_deploy
 ```
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}")))
 ``` 
-	- Este comando te permitirá pegar a senha de login do ArgoCD
+- Este comando te permitirá pegar a senha de login do ArgoCD
 5) Execute `kubectl port-forward svc/argocd-server -n argocd 8080:443`
 6) Acesse: [https://localhost:8080](https://localhost:8080/)
 7) Ao abrir a tela do argocd logue com admin e utilize a senha que foi apresentada anteriormente
@@ -351,7 +351,8 @@ Destination:
 9) Clique em "Create"
 10)  Após criação, clique em **Sync** -> **Synchronize**
 11)  Verifique se o aplicativo aparece como "Healthy" e "Synced"
-<img width="1131" height="234" alt="image" src="https://github.com/user-attachments/assets/d6a37d00-3355-4cab-9911-9e21edb55b50" />
+<img width="425" height="320" alt="image" src="https://github.com/user-attachments/assets/2aaeaf75-0ed7-4659-88d4-b8055c2dbcef" />
+
 - Ou pelo comando `kubectl get application -n argocd`
 - <img width="545" height="32" alt="image" src="https://github.com/user-attachments/assets/6f77cbce-d650-4c50-88f2-7e36176d1fa3" />
 
@@ -362,6 +363,7 @@ Destination:
 1) Para verificar o funcionamento execute `kubectl get svc hello-app-service`
 2) Para acessar a aplicação execute `kubectl port-forward svc/hello-app-service 8000:8080`
 3) Acesse: http://localhost:8000 
+<img width="1125" height="348" alt="image" src="https://github.com/user-attachments/assets/66dd0db7-4201-4421-97a3-b2335aa476d3" />
 
 ## 📝Como deve estar funcionando ao final:
 1. Push no código → Dispara o GitHub Actions
