@@ -15,6 +15,7 @@ async def root():
                     color: #403C3A;
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     font-family: Manrope, sans-serif;
                 }
                 h1 {
