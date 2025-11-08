@@ -14,8 +14,8 @@ async def root():
                     background-color: #A6A3A1;
                     color: #403C3A;
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
+                    font-family: Manrope, sans-serif;
                 }
                 h1 {
                     font-size: 2rem;
@@ -25,6 +25,7 @@ async def root():
                     background-color: #F2ECE4;
                     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
                     text-align: center;
+                    border-radius: 20px;
                 }
             </style>
         </head>
