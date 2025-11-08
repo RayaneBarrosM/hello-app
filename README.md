@@ -277,6 +277,8 @@ hello-manifests/
 ├── service.yaml
 └── kustomization.yaml
 ```
+
+🔗 **[Clique aqui para ver o rrepositório de manifests completo](https://github.com/RayaneBarrosM/hello-app)**
 ## 3. Chaves ssh
 Nesta seção geraremos e colocaremos as chaves de acesso no repositório
 ### 3.1 Criando uma chave 
