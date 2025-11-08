@@ -17,9 +17,9 @@ async def root():
                     flex-direction: column;
                     align-items: center;
                 }
-                h1 {{
+                h1 {
                     font-size: 2rem;
-                }}
+                }
                 .square{
                     padding: 1rem;
                     background-color: #F2ECE4;
