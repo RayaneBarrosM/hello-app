@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 
 app=FastAPI()
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 async def root():
     html_content = f"""
     <html>
