@@ -5,7 +5,7 @@ app=FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
 async def root():
-    html_content = f"""
+    html_content = """
     <html>
         <head>
             <title>Sobre o projeto</title>
